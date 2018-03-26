@@ -1,0 +1,22 @@
+{
+    "name": "redzjovi/shipment-tracking",
+    "description": "Track your shipment",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "dev-master",
+        "sunra/php-simple-html-dom-parser": "^1.5",
+        "symfony/var-dumper": "^3.4"
+    },
+    "authors": [
+        {
+            "name": "Jovi",
+            "email": "redzjovi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "redzjovi\\shipment\\": "src/"
+        }
+    }
+}
