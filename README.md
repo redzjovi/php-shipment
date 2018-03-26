@@ -100,3 +100,10 @@ $shipment = new \redzjovi\shipment\v1\tracking\Tiki;
 $track = $shipment->track('030071590590');
 var_dump($track);
 ```
+
+## How to use Dynamic Courier
+```
+$shipment = new \redzjovi\shipment\v1\tracking\Tracking('pos');
+$track = $shipment->track('15356195691');
+dump($track);
+```
