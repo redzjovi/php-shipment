@@ -1,12 +1,12 @@
 ## Synopsis
-PHP track your Tiki.
+PHP track your shipment.
 
 ## Installation
 ```
-composer require redzjovi/tiki
+composer require redzjovi/shipment
 ```
 
-## How to use
+## How to use Jne
 ```
 /*
  * @param [string] $trackingNumber
@@ -38,7 +38,10 @@ composer require redzjovi/tiki
 $shipment = new \redzjovi\shipment\v1\tracking\Jne;
 $track = $shipment->track('011360133141818');
 var_dump($track);
+```
 
+## How to use Pos
+```
 /*
  * @param [string] $trackingNumber
  * @return [array] $result
@@ -66,7 +69,10 @@ var_dump($track);
 $shipment = new \redzjovi\shipment\v1\tracking\Pos;
 $track = $shipment->track('15356195691');
 var_dump($track);
+```
 
+## How to use Tiki
+```
 /*
  * @param [string] $trackingNumber
  * @return [array] $result
